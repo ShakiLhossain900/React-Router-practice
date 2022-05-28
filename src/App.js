@@ -11,12 +11,20 @@ function App() {
       <BrowserRouter>
         <Nav />
         <Routes>
-          <Route path="/about" component={About} />
-          <Route path="/shop" component={Shop} />
+          <Route exact path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/shop" element={<Shop />} />
         </Routes>
       </BrowserRouter>
     </div>
   );
 }
+const Home = () => {
+  return (
+    <div>
+      <h1>Home</h1>
+    </div>
+  );
+};
 
 export default App;

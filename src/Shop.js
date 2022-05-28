@@ -8,4 +8,4 @@ const Shop = () => {
     );
 };
 
-export default Shop;<h1>Shop js</h1>
+export default Shop; 
